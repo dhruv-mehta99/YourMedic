@@ -1,6 +1,6 @@
 # Your Medic
 
-<img src="images/Logo YourMedic.svg">
+<img src="Images/Logo YourMedic.svg">
 
 ---
 ## Table of Content
