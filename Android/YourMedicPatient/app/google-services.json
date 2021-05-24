@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545467689706",
+    "project_id": "covid-patient-8defd",
+    "storage_bucket": "covid-patient-8defd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545467689706:android:6b823858887e526d7d4593",
+        "android_client_info": {
+          "package_name": "com.yourmedic.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545467689706-dh8udov0ghforrp133628kuuqko6k2gg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvtCppLNLZbHTPIE3WMow9ZQnuhxIu-4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545467689706-dh8udov0ghforrp133628kuuqko6k2gg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchDoctor"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Search for Doctor to Consult"
+        android:gravity="center"
+        android:id="@+id/bg_tv"
+        android:textSize="20sp"/>
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@drawable/list_txt_background"
+        android:queryHint="Search Doctors Here"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="15dp"
+        android:focusedByDefault="false"/>
+    <ListView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/docotor_list_view"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:layout_below="@id/searchView"/>
+</RelativeLayout>

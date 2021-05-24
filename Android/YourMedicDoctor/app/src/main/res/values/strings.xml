@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">YourMedic(Doctor)</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="app_pref">com.dhruv.yourmedicdoctor.app_pref</string>
+    <string name="auth_token">com.dhruv.yourmedicdoctor.auth_token</string>
+    <string name="FMC_token">com.dhruv.yourmedicdoctor.fmc_token</string>
+    <string name="lastLoginStatus">com.dhruv.yourmedicdoctor.lastLoginStatus</string>
+    <string name="baseUrl">http://192.168.43.75:8080</string>
+</resources>

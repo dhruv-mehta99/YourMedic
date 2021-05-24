@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DM"
+            android:fontFamily="@font/segoe_ui"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:id="@+id/tv_name_initials_doctor"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="25dp"
+            android:background="@drawable/list_txt_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="-1dp"
+                android:text="Dhruv Mehta"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/txt_doctor_fullname"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="-1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/info_logo"
+                android:id="@+id/info_logo"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/toggle_layout"
+        android:visibility="invisible"
+        android:background="@drawable/list_txt_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/list_txt_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MD. (Doctor Of Medicine) "
+                android:textSize="15sp"
+                android:textColor="#02475E"
+                android:id="@+id/doc_designation"
+                android:fontFamily="@font/segoe_ui"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: Ahmedabad, Gujarat "
+                android:textSize="11sp"
+                android:textColor="@color/black"
+                android:id="@+id/doc_address"
+                android:fontFamily="@font/segoe_ui"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/doc_whatsapp"
+                android:src="@drawable/whatsapp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

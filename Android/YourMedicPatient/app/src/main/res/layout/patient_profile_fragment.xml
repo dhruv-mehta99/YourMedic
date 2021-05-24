@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="52.68dp"
+            android:layout_height="33.01dp"
+            android:src="@drawable/user"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/lay_patient_profile">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Your Profile"
+            android:textAllCaps="true"
+            android:fontFamily="@font/montserrat_bolditalic"
+            android:textColor="#4D4D4D"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/underline"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="Edit Info"
+                android:fontFamily="@font/segoe_ui"
+                android:textStyle="bold"
+                android:textColor="#4D4D4D"/>
+            <View
+                android:layout_width="168dp"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/red"
+                android:background="@drawable/underline"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|fill_horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Name"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="#4D4D4D"/>
+                <TextView
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Siddharth Shah"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:id="@+id/tv_name_profile"
+                    android:textColor="@color/white"
+                    android:background="@drawable/profile_edit_info"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|fill_horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Email"
+                    android:paddingVertical="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="#4D4D4D"/>
+                <TextView
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Siddharth Shah"
+                    android:textSize="17sp"
+                    android:paddingVertical="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_ui"
+                    android:id="@+id/tv_email_profile"
+                    android:textColor="@color/white"
+                    android:background="@drawable/profile_edit_info"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|fill_horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Phone No"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="#4D4D4D"/>
+                <TextView
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Siddharth Shah"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:id="@+id/tv_phone_no_profile"
+                    android:textColor="@color/white"
+                    android:background="@drawable/profile_edit_info"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|fill_horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Address"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="#4D4D4D"/>
+            <TextView
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:text="Siddharth Shah"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/segoe_ui"
+                android:id="@+id/tv_address_profile"
+                android:textColor="@color/white"
+                android:background="@drawable/profile_edit_info"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="Currently Consulted Doctors"
+                android:fontFamily="@font/segoe_ui"
+                android:textStyle="bold"
+                android:textColor="#4D4D4D"/>
+            <View
+                android:layout_width="271dp"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/red"
+                android:background="@drawable/underline"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="DM"
+                    android:fontFamily="@font/segoe_ui"
+                    android:background="@drawable/profile_edit_info"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_init_name_crt_active_doctor"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="15dp"
+                    android:background="@drawable/list_txt_background">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="-1dp"
+                        android:gravity="center"
+                        android:text="Dhruv Mehta"
+
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_current_doc_name"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="-1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/info_logo"
+                        android:id="@+id/info_logo_active_doctor"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginLeft="1dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:id="@+id/toggle_layout_active_doc"
+                android:background="@drawable/list_txt_background">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_txt_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MD.(Doctor Of Medicine) "
+                        android:textSize="15sp"
+                        android:id="@+id/curnt_doc_des"
+                        android:textColor="#02475E"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ahmedabad, Gujarat "
+                        android:id="@+id/curnt_doc_addres"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="25dp"
+                        android:src="@drawable/whatsapp"
+                        android:id="@+id/whatsapp_logo"
+                         />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="Previously Consulted Doctors"
+
+                android:fontFamily="@font/segoe_ui"
+                android:textStyle="bold"
+                android:textColor="#4D4D4D"/>
+            <View
+                android:layout_width="271dp"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/red"
+                android:background="@drawable/underline"/>
+        </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_prev_cons_doctor"
+        android:divider="@null"
+        android:layout_marginTop="7dp"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prescribed Medicines"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:background="@drawable/list_txt_background"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <ListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="5dp"
+        android:divider="#ad5"
+        android:dividerHeight="2dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/pres_med_confirm_btn"
+        android:text = "Confirm"
+        android:layout_marginLeft="280dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

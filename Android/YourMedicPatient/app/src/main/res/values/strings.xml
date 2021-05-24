@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">YourMedic</string>
+
+    <string name="lastLoginStatus">com.yourmedic.patient.lastLoginStatus</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="app_pref">com.yourmedic.patient.app_pref</string>
+    <string name="auth_token">com.yourmedic.patient.auth_token</string>
+    <string name="FMC_token">com.yourmedic.patient.fmc_token</string>
+    <string name="baseUrl">http://192.168.43.75:8080</string>
+</resources>

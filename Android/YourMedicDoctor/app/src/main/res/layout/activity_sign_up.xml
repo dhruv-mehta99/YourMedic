@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/asset_1">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/toolbar_color"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:fontFamily="@font/georgia"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="30dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/toolbar">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="First Name"
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_firstname_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_alignParentTop="true"
+            android:layout_marginVertical="5dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Last Name"
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_lastname_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginVertical="5dp"
+            android:layout_below="@id/edt_firstname_signup"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email Id"
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_email_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@id/edt_lastname_signup"
+            android:layout_marginVertical="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Phone No."
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_phone_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@id/edt_email_signup"
+            android:layout_marginVertical="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Address"
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_address_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@id/edt_phone_signup"
+            android:layout_marginVertical="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Licence Id."
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_licence_id_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@id/edt_address_signup"
+            android:layout_marginVertical="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            android:textColorHint="#111111"
+            android:textSize="14dp"
+            android:id="@+id/edt_pass_signup"
+            android:fontFamily="@font/firasans_light"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@id/edt_licence_id_signup"
+            android:layout_marginVertical="5dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Enter"
+            android:id="@+id/btn_signup"
+            android:paddingHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@id/edt_pass_signup"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/segoe_ui"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signup"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_no_account"
+                android:text="Already have an account?"
+                android:textSize="16sp"
+                android:fontFamily="@font/firasans_medium"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign In"
+                android:textColor="#0019FF"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_signup_login"
+                android:layout_alignBottom="@id/txt_no_account"
+                android:layout_alignTop="@id/txt_no_account"
+                android:layout_toRightOf="@id/txt_no_account"/>
+
+        </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
