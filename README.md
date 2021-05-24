@@ -46,13 +46,13 @@ Through this App, we aim to provide technical support to the medical infrastruct
 
 ## Process Flow
 
-<img src="images/Flow Diagram.svg">
+<img src="Images/Flow Diagram.svg">
 
 ---
 
 ## Data Flow Diagram
 
-<img src="images/Data flow Diagram.svg">
+<img src="Images/Data flow Diagram.svg">
 
 ---
 
