@@ -52,7 +52,7 @@ Through this App, we aim to provide technical support to the medical infrastruct
 
 ## Data Flow Diagram
 
-<img src="Images/Data flow Diagram.svg">
+<img src="Images/Data Flow Diagram.svg">
 
 ---
 
