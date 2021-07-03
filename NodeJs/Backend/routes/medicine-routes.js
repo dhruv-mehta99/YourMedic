@@ -5,9 +5,10 @@ const { check } = require("express-validator");
 const isAuth = require('../middlewares/is-auth');
 const medicineControllers = require("../controllers/medicine-controllers");
 
+// Use for JWT Authentication
 router.use(isAuth);
 
-// To prescribe the medicines to a perticular patient
+// Prescribing the medicines to a perticular patient
 router.post("/add" ,
     [
         check("doctorId").not().isEmpty(),

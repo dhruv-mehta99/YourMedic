@@ -6,7 +6,7 @@ const isAuth = require('../middlewares/is-auth');
 
 const doctorControllers = require("../controllers/doctor-controllers");
 
-// To signup a doctor 
+// Doctor Signup 
 router.post("/signup",
     [
         check("name").not().isEmpty(),
@@ -19,7 +19,7 @@ router.post("/signup",
         check('designation').not().isEmpty()
     ], doctorControllers.signup);
 
-// To login a doctor
+// Doctor login
 router.post("/login",
     [
         check("email").isEmail(),
@@ -30,27 +30,27 @@ router.post("/login",
 
 router.use(isAuth);
 
-// To get the whole list of patients of a perticular doctor 
+// To get the whole list of patients for a specific doctor 
 router.get("/patients/:doctorId", doctorControllers.getPatients);
 
-// To get the list of panding or non-consulted patients of a perticular doctor
+// To get the list of panding or non-consulted patients for a specific doctor
 router.get("/nonConsulted/patients/:doctorId", doctorControllers.getNonConsultedPatients);
 
-// To login with a token which is stored in the memory of user's phone
+// To login a token which was stored in the memory of a user's phone
 router.post("/token/login",
     [
         check('token').not().isEmpty()
     ]
     , doctorControllers.loginWithToken);
 
-// To confirm a perticular patient & consult him.
+// Confirming a perticular patient & consult him.
 router.patch("/confirm/patient/:doctorId",
     [
         check('patientId').not().isEmpty()
     ]
     , doctorControllers.confirmPatient);
 
-// To reject the patient's consulting request
+// Rejecting the patient's consulting request
 router.patch("/reject/patient/:doctorId" ,
     [
         check('patientId').not().isEmpty()
