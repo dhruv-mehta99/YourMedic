@@ -1,0 +1,3 @@
+[submodule "MobileApp/Flutter/Doctor"]
+	path = MobileApp/Flutter/Doctor
+	url = https://github.com/dhruv-mehta99/Flutter_YourMedic_Doctor
